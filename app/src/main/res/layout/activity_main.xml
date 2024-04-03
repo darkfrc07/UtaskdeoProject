@@ -6,38 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="140dp"
-        android:src="@tools:sample/avatars"
+    <TextView
+        android:id="@+id/botonregistro_cuenta"
+        android:layout_width="172dp"
+        android:layout_height="42dp"
+        android:clickable="true"
+        android:onClick="setupr"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/texto_regitro"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
 
     <TextView
         android:id="@+id/nombre_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/utaskdeo"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <Button
         android:id="@+id/button_ingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="612dp"
-        android:text="Ingresar"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/ingresar"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:onClick="setupl"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="64dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:switchMinWidth="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="314dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_utaskdeo" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">Utaskdeo</string>
     <string name="utaskdeo">UTASKDEO</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="texto_regitro">No tienes una cuenta? \n registrate aqui.</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="inicia_sesion">Inicia sesión</string>
+    <string name="inicio_de_sesion">Inicio de sesión</string>
+    <string name="olvido_su_contrasena">Olvidó su contraseña?</string>
+    <string name="titulo_inicio_sesion">inicio sesión</string>
+    <string name="registrate">Registrate</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="usuario">TextView</string>
+    <string name="proveedor">proveedor</string>
 
 </resources>

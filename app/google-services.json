@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740789506055",
+    "project_id": "utaskdeo",
+    "storage_bucket": "utaskdeo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740789506055:android:935a76cf729eee683bdaa2",
+        "android_client_info": {
+          "package_name": "com.example.utaskdeo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeynxHHfG8i4L2DUL6YY0Oze1KG5kXXbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
