@@ -22,5 +22,6 @@
     <string name="aceptar">Aceptar</string>
     <string name="usuario">TextView</string>
     <string name="proveedor">proveedor</string>
+    <string name="usuarioR">Usuario</string>
 
 </resources>

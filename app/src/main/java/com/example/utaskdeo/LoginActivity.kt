@@ -19,15 +19,15 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_login)
+        val view = binding.root
+        setContentView(view)
 
 
-        val inicia_sesion_button : Button= findViewById(R.id.inicia_sesion_button)
         val txtemail : EditText = findViewById(R.id.editTextTextEmailAddress)
-        val txtpass : EditText = findViewById(R.id.editTextTextEmailAddress)
-        val back : ImageButton = findViewById(R.id.back_imageButton)
+        val txtpass : EditText = findViewById(R.id.editTextTextPassword)
 
-        inicia_sesion_button.setOnClickListener {
+
+       binding.buttonIniciaSesion.setOnClickListener {
             setupp(txtemail.text.toString(), txtpass.text.toString())
         }
 
@@ -39,14 +39,18 @@ class LoginActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(editemail,
                     editpassword).addOnCompleteListener(this){task ->
                     if (task.isSuccessful){
-                        val principalIntent : Intent= Intent( this, PrincipalActivity::class.java)
+                        Toast.makeText(this,"Bienvenido.",Toast.LENGTH_SHORT).show()
 
+                        val principalIntent : Intent= Intent( this, PrincipalActivity::class.java)
                         startActivity(principalIntent)
+
 
                     }else{
                         showAlert()
                     }
                 }
+            }else{
+                showAlertetEmpty()
             }
 
 
@@ -55,7 +59,15 @@ class LoginActivity : AppCompatActivity() {
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
-        builder.setMessage("Se ha producido un error en el inicio de sesion")
+        builder.setMessage("Se ha producido un error en el inicio de sesion, verifique sus credenciales")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog:AlertDialog = builder.create()
+        dialog.show()
+    }
+    private fun showAlertetEmpty() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Ingrese sus credenciales")
         builder.setPositiveButton("Aceptar", null)
         val dialog:AlertDialog = builder.create()
         dialog.show()

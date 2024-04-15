@@ -12,19 +12,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+        val view = binding.root
+        setContentView(view)
 
-    }
-
-    fun setupl(view: View) {
-
+        binding.buttonIngresar.setOnClickListener {
             val loginIntent : Intent = Intent( this, LoginActivity::class.java)
             startActivity(loginIntent)
-    }
-    fun setupr(view: View) {
+        }
 
-        val registerIntent : Intent = Intent( this, RegisterActivity::class.java)
-        startActivity(registerIntent)
+        binding.buttonRegistro.setOnClickListener {
+            val registerIntent : Intent = Intent( this, PrincipalActivity::class.java)
+            startActivity(registerIntent)
+        }
+
     }
 
 }

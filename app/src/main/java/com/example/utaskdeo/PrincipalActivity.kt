@@ -9,21 +9,15 @@ import com.example.utaskdeo.databinding.ActivityPrincipalBinding
 import com.example.utaskdeo.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 
-enum class ProviderType {
-    BASIC
-}
+
 class PrincipalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPrincipalBinding
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPrincipalBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_register)
-
-        val bundle = intent.extras
-        val email = bundle?.getString("email")
-        val provider = bundle?.getString("provider")
-        setup(email ?:"",provider  ?:"")
+        val view = binding.root
+        setContentView(view)
     }
     private fun setup (email: String, provider:String) {
         var txtemail : TextView = findViewById(R.id.usuariotextView)
