@@ -18,6 +18,15 @@
         android:id="@+id/secondFragment"
         android:name="com.example.utaskdeo.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment2"
+            app:destination="@id/thirdFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment2"
+        android:name="com.example.utaskdeo.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 
 </navigation>

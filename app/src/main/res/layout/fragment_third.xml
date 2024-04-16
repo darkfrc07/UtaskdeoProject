@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".FirstFragment">
+    tools:context=".ThirdFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,24 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_horizontal"
             android:padding="20dp">
 
             <LinearLayout
-                android:layout_width="295dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/mensaje3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tareas"
-                    android:textSize="18dp"
-                    android:paddingLeft="155dp"
-                    android:layout_marginTop="7dp"/>
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="right">
             </LinearLayout>
+
         </LinearLayout>
         <android.widget.SearchView
             android:layout_width="match_parent"
@@ -42,15 +34,30 @@
             android:background="@color/azul_claro"
             android:iconifiedByDefault="false"
             android:layout_margin="8dp"
-
             />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/tasklistRv"
+
+        <android.widget.SearchView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-        
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
 
+            android:layout_marginBottom="8dp"
+            android:background="@color/azul_claro"
+            android:iconifiedByDefault="false"
+            android:queryHint="Plazo de la tarea" />
+
+        <android.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Quieres recordarlo"
+            android:background="@color/azul_claro"
+            android:iconifiedByDefault="false"
+            android:layout_margin="8dp"
+
+            />
 
     </LinearLayout>
 
