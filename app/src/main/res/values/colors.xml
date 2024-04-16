@@ -5,4 +5,10 @@
     <color name="azul_claro">#DEE9FF</color>
     <color name="azul_medio">#69B4FF</color>
     <color name="azul_oscuro">#006FFF</color>
+    <color name="azul_indicador">#69B4FF</color>
+    <color name="gris_osc">#1E1E1E</color>
+    <color name="gris">#454545</color>
+    <color name="rojo">#FF0000</color>
+
+
 </resources>

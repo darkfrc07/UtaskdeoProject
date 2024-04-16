@@ -10,32 +10,43 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="767dp"
         android:orientation="vertical">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="20dp">
 
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/userdafault"></ImageView>
+
             <LinearLayout
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="8"
                 android:orientation="vertical"
-                android:layout_weight="8">
+                >
+
+                <TextView
+                    android:id="@+id/boton_perfil1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_usuario"
+                    android:textSize="25dp"
+                    android:clickable="true"/>
 
                 <TextView
                     android:id="@+id/mensaje1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/bienvenida" />
-
-                <TextView
-                    android:id="@+id/mensaje2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nombre_usuario"
-                    android:textSize="25dp"/>
+                    android:text="@string/Estado" />
 
             </LinearLayout>
 
@@ -43,48 +54,137 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_weight="2"
-                android:gravity="right">
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
-                    android:src="@drawable/userdafault">
-                </ImageView>
+                android:gravity="right"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/logo_utaskdeo"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/TareasUrgentes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tareasurgentes"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/boton_tarea"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cuadro_tareas"
+                android:gravity="left"
+                android:text="Tarea AM"
+                android:textColor="#FFFFFF"
+                android:textSize="29sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cuadro_tareas"
+                android:gravity="left"
+                android:text="Proyecto IA"
+                android:textColor="#FFFFFF"
+                android:textSize="29sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/Notas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notas"
+                android:textSize="21sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/cuadro_tareas"
+                        android:text="Nota 2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="29sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/cuadro_tareas"
+                        android:text="Nota 1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="29sp" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
-        <android.widget.SearchView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:queryHint="Agrega el nombre de la tarea"
-            android:background="@color/azul_claro"
-            android:iconifiedByDefault="false"
-            android:layout_margin="8dp"
 
-            />
 
     </LinearLayout>
 
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_add_24"
-        android:layout_alignParentRight="true"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@color/azul_medio"
-        />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnNavigate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NavegarPrueba"
-        android:layout_marginTop="666dp">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_bbar"
+            android:backgroundTint="@color/white"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav" />
+    </LinearLayout>
 
-    </Button>
+
 </RelativeLayout>

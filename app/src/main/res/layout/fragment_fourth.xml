@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">>
+
+        <TextView
+            android:id="@+id/Notificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Notificaciónes"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/Hoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoy"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/notificacion_1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cuadro_tareas"
+            android:gravity="left"
+            android:text="Tu tarea “Tarea AM” tiene plazo hasta el dia de
+hoy 5 de marzo a las 10:00 am"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cuadro_tareas"
+            android:gravity="left"
+            android:text="Tu tarea “Proyecto IA” tiene plazo hasta mañana
+a las 11:00 am"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/Esta_semana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esta semana"
+            android:textSize="21sp" />
+        <Button
+            android:id="@+id/notificacion_2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cuadro_tareas"
+            android:gravity="left"
+            android:text="Tu tarea “Tarea ED” tiene plazo de una semana
+hasta el 12 de marzo a las 6:00 pm"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cuadro_tareas"
+            android:gravity="left"
+            android:text="Tu tarea “Proyecto DB” tiene plazo hasta el dia
+de hoy 5 de marzo a las 10:00 am "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

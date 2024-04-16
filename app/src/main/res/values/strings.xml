@@ -26,6 +26,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nombre_usuario">Juliana</string>
-    <string name="bienvenida">Bienvenida</string>
+    <string name="Estado">Disponible</string>
+    <string name="tareasurgentes">Tareas urgentes</string>
+    <string name="notas">Notas</string>
 
 </resources>

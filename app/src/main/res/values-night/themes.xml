@@ -1,7 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Utaskdeo" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="backgroundColor">@color/gris_osc</item>
+        <item name="colorPrimary">@color/azul_oscuro</item>
+        <item name="android:textColorHint">@color/azul_medio</item>
+        <item name="android:textColor">@color/azul_oscuro</item>
+        <item name="colorControlNormal">@color/azul_medio</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="font">@font/inter</item>
+    </style>
+    <style name="Background" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:color">@color/gris</item>
+
     </style>
 </resources>

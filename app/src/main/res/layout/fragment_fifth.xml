@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ThirdFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="right">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="25dp"
+            android:id="@+id/Cual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es la tarea?"
+            android:textSize="30sp" />
+        <android.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Agrega el nombre de la tarea"
+            android:background="@color/azul_claro"
+            android:iconifiedByDefault="false"
+            android:layout_margin="8dp"
+            />
+        <TextView
+            android:layout_marginStart="25dp"
+            android:id="@+id/Plazo_tarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es el plazo?"
+            android:textSize="30sp" />
+
+        <android.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@color/azul_claro"
+            android:iconifiedByDefault="false"
+            android:queryHint="Plazo de la tarea" />
+        <TextView
+            android:layout_marginStart="25dp"
+            android:id="@+id/Que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué hay que hacer?"
+            android:textSize="30sp" />
+
+        <android.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Quieres recordarlo"
+            android:background="@color/azul_claro"
+            android:iconifiedByDefault="false"
+            android:layout_margin="8dp"
+
+            />
+        <TextView
+            android:layout_marginStart="25dp"
+            android:id="@+id/Cuando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuando quieres recordarlo?"
+            android:textSize="30sp" />
+
+        <android.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Quieres recordarlo"
+            android:background="@color/azul_claro"
+            android:iconifiedByDefault="false"
+            android:layout_margin="8dp"
+
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_24"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/azul_oscuro"/>
+
+
+
+
+</RelativeLayout>
