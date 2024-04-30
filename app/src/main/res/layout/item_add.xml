@@ -47,7 +47,7 @@
         <EditText
             android:id="@+id/taskDescription"
             android:hint="Task "
-            android:inputType="phone"
+            android:inputType="text"
             android:textColor="@color/azul_medio"
             android:background="@drawable/shape_background"
             android:padding="15dp"
