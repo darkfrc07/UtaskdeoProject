@@ -63,14 +63,14 @@ class SecondFragment : Fragment() {
         addDialog.setPositiveButton("Ok") { dialog, _ ->
             val name = taskName.text.toString()
             val description = description.text.toString()
-            userList.add(UserData("Name: $name", "Task : $description"))
+            userList.add(UserData("Nombre: $name", "Tarea : $description"))
             userAdapter.notifyDataSetChanged()
-            Toast.makeText(requireContext(), "Adding Task Information Success", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Tarea agregada", Toast.LENGTH_SHORT).show()
             dialog.dismiss()
         }
-        addDialog.setNegativeButton("Cancel") { dialog, _ ->
+        addDialog.setNegativeButton("Cancelar") { dialog, _ ->
             dialog.dismiss()
-            Toast.makeText(requireContext(), "Cancel", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Cancelar", Toast.LENGTH_SHORT).show()
         }
 
         addDialog.create().show()

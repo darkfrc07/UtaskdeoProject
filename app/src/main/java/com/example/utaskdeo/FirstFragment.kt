@@ -39,8 +39,9 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_firstFragment_to_fourthFragment)
         }
         button_tareas1.setOnClickListener {
-            findNavController().navigate(R.id.action_firstFragment_to_fifthFragment)
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment2)
         }
+
 
 
 

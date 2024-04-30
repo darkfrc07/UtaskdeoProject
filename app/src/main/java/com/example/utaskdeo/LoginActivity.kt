@@ -31,6 +31,12 @@ class LoginActivity : AppCompatActivity() {
             setupp(txtemail.text.toString(), txtpass.text.toString())
         }
 
+        binding.olvContrasenaButton.setOnClickListener{
+            val chPassIntent : Intent = Intent( this, ChpassActivity::class.java)
+            startActivity(chPassIntent)
+
+        }
+
     }
     private fun setupp(editemail:String,editpassword:String){
 

@@ -19,18 +19,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/inicio_sesion_textView"
+            android:id="@+id/chPass_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Ingresa tu e-mail"
+            android:textSize="35sp" />
+        <TextView
+            android:id="@+id/descripcion_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/inter_bold"
-            android:text="@string/inicio_de_sesion"
-            android:textSize="30sp" />
+            android:text="posteriormnte revisa la bandeja de tu correo"
+            android:textSize="15sp"
+            android:textColor="@color/azul_medio"/>
+
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextCorreoCh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
@@ -39,47 +50,29 @@
             android:inputType="textEmailAddress"
             android:textSize="15sp" />
 
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="44dp"
-            android:ems="10"
-            android:hint="@string/contrasena"
-            android:inputType="textPassword"
-            android:textSize="15sp" />
 
         <Button
 
-            android:id="@+id/button_Inicia_sesion_"
+            android:id="@+id/ch_pass_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="6dp"
             android:fontFamily="@font/inter_light"
-            android:fontFeatureSettings=""
-            android:onClick="setupp"
-            android:text="@string/inicia_sesion"
-            android:textColor="#FFFFFF"
+            android:text="siguiente"
+            android:onClick="setup"
             android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/olv_contrasena_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/olvido_su_contrasena"
-            android:clickable="true"/>
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tutulo_inicio_sesion_textView"
-        android:layout_width="90dp"
+        android:id="@+id/tutulo_chPass_textView"
+        android:layout_width="155dp"
         android:layout_height="21dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/titulo_inicio_sesion"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="25dp"
+
+        android:text="Cambio de contraseña"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
