@@ -41,6 +41,7 @@ android {
 
 dependencies {
 
+    implementation("com.google.firebase:firebase-database:21.0.0")
     val navVersion = "2.7.0"
 
     //NavComponent

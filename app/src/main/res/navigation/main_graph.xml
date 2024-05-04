@@ -34,7 +34,11 @@
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.utaskdeo.ThirdFragment"
-        android:label="ThirdFragment" />
+        android:label="ThirdFragment" >
+        <action
+            android:id="@+id/action_thirdFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
     <fragment
         android:id="@+id/fourthFragment"
         android:name="com.example.utaskdeo.FourthFragment"
@@ -43,5 +47,10 @@
         android:id="@+id/fifthFragment"
         android:name="com.example.utaskdeo.FifthFragment"
         android:label="FifthFragment" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.utaskdeo.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 
 </navigation>
