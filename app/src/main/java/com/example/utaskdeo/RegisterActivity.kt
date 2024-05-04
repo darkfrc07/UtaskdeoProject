@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.utaskdeo.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 
 class RegisterActivity : AppCompatActivity() {
@@ -22,8 +23,6 @@ class RegisterActivity : AppCompatActivity() {
         val register_button : Button = findViewById(R.id.registro_button)
         val txtemail : EditText = findViewById(R.id.editTextTextEmailAdressR)
         val txtpass : EditText = findViewById(R.id.editTextTextPasswordR)
-
-
         register_button.setOnClickListener {
             setupp(txtemail.text.toString(), txtpass.text.toString())
         }
@@ -36,7 +35,8 @@ class RegisterActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(editemail,
                     editpassword).addOnCompleteListener (this){task ->
                     if (task.isSuccessful){
-                        Toast.makeText(this,"Usuario creado.",Toast.LENGTH_SHORT).show()
+                        FirebaseAuth.getInstance().currentUser?.sendEmailVerification()
+                        Toast.makeText(this,"Correo de veficación enviado.",Toast.LENGTH_SHORT).show()
                         val mainIntent : Intent = Intent( this, MainActivity::class.java)
                         startActivity(mainIntent)
                     }else{

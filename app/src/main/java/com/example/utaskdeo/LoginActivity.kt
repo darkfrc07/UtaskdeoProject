@@ -45,10 +45,16 @@ class LoginActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(editemail,
                     editpassword).addOnCompleteListener(this){task ->
                     if (task.isSuccessful){
-                        Toast.makeText(this,"Bienvenido.",Toast.LENGTH_SHORT).show()
+                        val verificado = FirebaseAuth.getInstance().currentUser?.isEmailVerified
+                        if (verificado == true) {
+                            Toast.makeText(this, "Bienvenido.", Toast.LENGTH_SHORT).show()
 
-                        val principalIntent : Intent= Intent( this, PrincipalActivity::class.java)
-                        startActivity(principalIntent)
+                            val principalIntent: Intent =
+                                Intent(this, PrincipalActivity::class.java)
+                            startActivity(principalIntent)
+                        }else{
+                            showAlertVerify()
+                        }
 
 
                     }else{
@@ -74,6 +80,15 @@ class LoginActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
         builder.setMessage("Ingrese sus credenciales")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog:AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun showAlertVerify() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Su correo aun no ha sido verificado, por favor verifiquelo.")
         builder.setPositiveButton("Aceptar", null)
         val dialog:AlertDialog = builder.create()
         dialog.show()

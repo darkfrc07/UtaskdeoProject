@@ -67,8 +67,8 @@
 
     <TextView
         android:id="@+id/tutulo_chPass_textView"
-        android:layout_width="155dp"
-        android:layout_height="21dp"
+        android:layout_width="160dp"
+        android:layout_height="19dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="25dp"
 
