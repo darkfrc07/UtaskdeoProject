@@ -108,4 +108,5 @@ abstract class UserAdapter<ToDoData : Any?>(val c: Context, val userList: ArrayL
     override fun getItemCount(): Int {
         return userList.size
     }
+    //errores task y taskDescription
 }
